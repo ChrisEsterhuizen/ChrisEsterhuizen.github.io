@@ -1,0 +1,141 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Project 1 | Chris Esterhuizen</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo">Chris Esterhuizen</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li><a href="index.html">My Portfolio</a></li>
+							<li class=""><a href="generic.html">About Me</a></li>
+							<li><a href="elements.html">Relevant info</a></li>
+                            <li class="active"><a href="Project1.html">Project 1</a></li>
+						</ul>
+						<ul class="icons">
+							<li><a href="https://www.linkedin.com/in/chris-esterhuizen/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+							<li><a href="https://github.com/ChrisEsterhuizen" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<section class="post">
+								<header class="major">
+									<h1>Project 1:<br />
+										Autonoumous Window Cleaning Robot</h1>
+									<p>This project tackles the problem of finding a more efficient alternative to costly, labour intensive and risky manual glass window cleaning operations by developing an automatic window cleaning robot. The idea behind this project is to develop a system that solves the aforementioned problem by utilizing an adhesion and locomotion sub-system employing sensors to collect positional and orientation data that will be analysed in a control system in order for the robot window cleaner to traverse the entire vertical glass surface and know where it is on the window.</p>
+									<a href="FindOutMore.html"><b>Find out more and get this Project's GitHub Repository</b></a>
+								</header>
+                                <hr>
+                                <p>
+                                    The following video demonstrates the working of the robot.
+                                </p>
+                               <center> <video controls="controls" width="1100" height="800" 
+                                name="Robot Demo" src="Videos/RobotDemo.mp4">
+                                </video></center>
+                                <hr>
+                                <h2>Functional Block Diagram</h2>
+                                <div  class="image fit"><center><img src="images/FunctionalDiagramDraft3.png" alt="" /></div>
+                                <h2>Functional Discription</h2>
+                                <p>The proposed solution of a window cleaning robot’s functions can be categorized into five main functions as illustrated in the functional block diagram in Fig. 1 above. These functions are the positioning and navigation tracking function (FU 1), the movement and adhesion function (FU 2), filth detection function (FU 3), the cleaning function (FU 4) and the user control function (FU 5). The movement path to ensure all areas of the window are cleaned is achieved with the navigational controller (FU 1.3) which determines a route to clean based on the current position, orientation and the position of the window frame. The function of the position and orientation estimation system (FU 1.1) is to determine the current trajectory and orientation and to relay that information to the navigational controller. The window frame detection system (FU 1.2) identifies the window frame distance and relays the frame position to the navigational controller and the cleaning controller to alter the cleaning time and method. The movement of the robot on the vertical glass is realized with a locomotion controller (FU 2.2) which alters the adhesion strength by sending a signal to the adhesion mechanism controller (FU 2.3) which relays controls to the actuators (FU 2.4-2.5) to maneuver the robot on the glass surface. The adhesion fault detection system (FU 2.1) determines when adhesion strength is lost and informs the navigational controller to stop movement and perform emergency steps to establish suitable adhesion so that the robot does not fall backwards. To ensure the robot spends more time on areas that gather contamination more easily and does not move over an area before it is clean; the contamination level measurement system (FU 3) will determine the filth level at the current position and send this information to the locomotion mechanism controller which will only allow the robot to progress once sufficient filth levels are removed. The cleaning technique controller (FU 4.1) will adjust the cleaning technique. The user interface system (FU 5.1) allows the user to stop and start the robot over a wireless communication system (FU 5.2). The user interface controller (FU 5.3) sends stop/start data to the navigational controller.</p>
+								<hr>
+                                <p>
+                                    The following figures illustrates the designed cleaning path of the robot to cover the entire window as well as the diagrams used for static and dynamic force modelling. A diagram showcasing the window frame detection sensor layout as well as the diagram illustarting orienetation determination is given.
+                                </p>
+                                <div class="box alt">
+                                    <div class="row gtr-50 gtr-uniform">
+                                        <!-- <div class="col-4"><span class="image fit"><img src="images/Experiment1Setup.png" alt="" /></span></div> -->
+                                        <!-- <div class="col-4"><span class="image fit"><img src="images/Experiment2Setup.png" alt="" /></span></div> -->
+                                        <!-- <div class="col-4"><span class="image fit"><img src="images/PathGeneration.png" alt="" /></span></div> -->
+                                        <a href="images/Experiment1Setup.png" class="col-4"><span class="image fit"><img src="images/Experiment1Setup.png" alt="" /></a>
+                                        <a href="images/Experiment2Setup.png" class="col-4"><span class="image fit"><img src="images/Experiment2Setup.png" alt="" /></a>
+                                        <a href="images/PathGeneration.png" class="col-4"><span class="image fit"><img src="images/PathGeneration.png" alt="" /></a>
+                                        <!-- Break -->
+                                        <!-- <div class="col-4"><span class="image fit"><img src="images/RubberTracks.jpg" alt="" /></span></div>
+                                        <div class="col-4"><span class="image fit"><img src="images/bg_old.jpg" alt="" /></span></div>
+                                        <div class="col-4"><span class="image fit"><img src="images/bg_old.jpg" alt="" /></span></div> -->
+                                        <a href="images/ModelDiagramOneIdle.png" class="col-4"><span class="image fit"><img src="images/ModelDiagramOneIdle.png" alt="" /></a>
+                                        <a href="images/DynamicModelDiagramOneIdle.png" class="col-4"><span class="image fit"><img src="images/DynamicModelDiagramOneIdle.png" alt="" /></a>
+                                        <a href="images/AirFlowModelDiagram.png" class="col-4"><span class="image fit"><img src="images/AirFlowModelDiagram.png" alt="" /></a>
+                                        <!-- Break -->
+                                        <!-- <div class="col-4"><span class="image fit"><img src="images/bg_old.jpg" alt="" /></span></div>
+                                        <div class="col-4"><span class="image fit"><img src="images/bg_old.jpg" alt="" /></span></div>
+                                        <div class="col-4"><span class="image fit"><img src="images/bg_old.jpg" alt="" /></span></div> -->
+                                        <a href="images/Ultrasonic_layout.png" class="col-4"><span class="image fit"><img src="images/Ultrasonic_layout.png" alt="" /></a>
+                                        <a href="images/Turning angle.png" class="col-4"><span class="image fit"><img src="images/Turning angle.png" alt="" /></a>
+                                        <a href="images/OrientationDiagram.png" class="col-4"><span class="image fit"><img src="images/OrientationDiagram.png" alt="" /></a>
+                                    </div>
+                                </div>
+                                
+                                <a href="FindOutMore.html">This Project's GitHub Repository</a>
+
+							</section>
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<section class="split contact">
+							<section class="alt">
+								<h3>Address</h3>
+								<p>24 Willow Waters, Pretorius Road<br />
+								Van Riebeck Park, Kempton Park<br />
+								Gauteng, 1619</p>
+							</section>
+							<section>
+								<h3>Phone</h3>
+								<p>Send me an email to get my contact details</p>
+							</section>
+							<section>
+								<h3>Email</h3>
+								<p><a href="mailto: cesterhuizenes@gmail.com">cesterhuizenes@gmail.com</a></p>
+							</section>
+							<section>
+								<h3>Social</h3>
+								<ul class="icons alt">
+									<li><a href="https://www.linkedin.com/in/chris-esterhuizen/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+							<li><a href="https://github.com/ChrisEsterhuizen" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+								</ul>
+							</section>
+						</section>
+					</footer>
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>&copy; Chris Esterhuizen</li></ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
